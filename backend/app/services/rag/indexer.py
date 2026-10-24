@@ -60,6 +60,7 @@ class Indexer:
         """Fetch embeddings for a batch of texts using Gemini concurrently."""
         from concurrent.futures import ThreadPoolExecutor
         
+        @retry(wait=wait_random_exponential(min=1, max=10), stop=stop_after_attempt(5))
         def _fetch_single(text: str) -> List[float]:
             if self.use_new_sdk:
                 response = self.client.models.embed_content(
