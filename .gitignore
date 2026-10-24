@@ -1,0 +1,54 @@
+# Environments & Secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+backend/venv/
+backend/env/
+*.egg-info/
+.pytest_cache/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Large Data & PDF Files (income_tax_act.pdf is ~179MB, GitHub limit is 100MB)
+*.pdf
+backend/data/*.pdf
+backend/data/income_tax_act.pdf
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Learning & Study Materials (Local only)
+LearningMaterial*
+presentation/

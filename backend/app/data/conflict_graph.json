@@ -1,0 +1,39 @@
+{
+  "edges": {
+    "conf_238_1472": {
+      "edge_id": "conf_238_1472",
+      "chunk_a_id": 238,
+      "chunk_b_id": 1472,
+      "p_con": 0.94,
+      "resolved_by_id": 238,
+      "resolution_reason": "Statutory Proviso Dominance: Post-Feb 2021 ULIP proviso in Chunk 238 overrides general Section 80C allowance in Chunk 1472",
+      "created_at": "2026-10-20"
+    },
+    "conf_415_609": {
+      "edge_id": "conf_415_609",
+      "chunk_a_id": 415,
+      "chunk_b_id": 609,
+      "p_con": 0.96,
+      "resolved_by_id": 609,
+      "resolution_reason": "Temporal Recency: Chunk 609 contains the updated Finance Act amendment overriding earlier provision 415",
+      "created_at": "2026-10-20"
+    },
+    "conf_1902_1903": {
+      "edge_id": "conf_1902_1903",
+      "chunk_a_id": 1903,
+      "chunk_b_id": 1902,
+      "p_con": 0.92,
+      "resolved_by_id": 1902,
+      "resolution_reason": "Statutory Authority: Section 87A authoritative enactment governing rebate limits",
+      "created_at": "2026-10-20"
+    }
+  },
+  "resolved_winners": {
+    "238": 238,
+    "1472": 238,
+    "415": 609,
+    "609": 609,
+    "1903": 1902,
+    "1902": 1902
+  }
+}

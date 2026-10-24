@@ -1,0 +1,20 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.pytest_cache/
+
+# Large binaries & PDFs
+*.pdf
+data/*.pdf
+data/income_tax_act.pdf
+
+#Custom files

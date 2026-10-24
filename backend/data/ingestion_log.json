@@ -1,0 +1,785 @@
+{
+  "run_timestamp": "2026-09-18T14:25:40.478541+00:00",
+  "source_pdf": "data\\income_tax_act.pdf",
+  "source_document": "income_tax_act.pdf",
+  "ingestion_config": {
+    "max_tokens_per_chunk": 400,
+    "chunk_overlap_tokens": 50,
+    "embedding_model": "gemini-embedding-2",
+    "embedding_dimension": 768,
+    "qdrant_collection": "income_tax_act"
+  },
+  "extraction_summary": {
+    "total_pages": 1117,
+    "pages_extracted": 990,
+    "pages_failed": 127,
+    "pages_empty": 0,
+    "failed_page_numbers": [
+      5,
+      6,
+      26,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      469,
+      470,
+      471,
+      472,
+      473,
+      474,
+      475,
+      476,
+      477,
+      478,
+      479,
+      480,
+      481,
+      482,
+      483,
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492,
+      493,
+      494,
+      495,
+      496,
+      497,
+      498,
+      499,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      530,
+      531,
+      532,
+      533,
+      534,
+      535,
+      536,
+      537,
+      538,
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547,
+      548,
+      549,
+      550,
+      765,
+      769,
+      1032
+    ],
+    "empty_page_numbers": []
+  },
+  "chunking_summary": {
+    "total_chunks": 4082,
+    "chunks_fully_valid": 3729,
+    "chunks_with_warnings": 353,
+    "warning_details": [
+      {
+        "chunk_index": 0,
+        "warnings": [
+          "section_number not detected",
+          "chapter not detected"
+        ]
+      },
+      {
+        "chunk_index": 8,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 33,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 35,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 128,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 130,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 136,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 144,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 146,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 189,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 190,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 417,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 461,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 494,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 549,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 565,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 569,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 589,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 594,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 598,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 600,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 601,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 606,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 608,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 612,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 629,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 636,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 640,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 643,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 645,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 647,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 657,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 659,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 661,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 778,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 837,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 873,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 923,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 943,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 967,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 973,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1005,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1012,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1031,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1039,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1048,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1087,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1092,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1124,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1127,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1164,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1188,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1192,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1208,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1210,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1212,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1294,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1295,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1311,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1341,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1353,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1354,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1356,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1359,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1370,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1371,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1373,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1374,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1375,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1381,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1383,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1385,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1387,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1389,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1391,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1397,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1399,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1419,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1442,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1445,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1453,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1456,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1458,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1466,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1468,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1470,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1516,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1523,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1525,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1547,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1588,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1595,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1605,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1607,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1618,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1751,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1752,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1753,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1754,
+        "warnings": [
+          "section_number not detected"
+        ]
+      },
+      {
+        "chunk_index": 1755,
+        "warnings": [
+          "section_number not detected"
+        ]
+      }
+    ]
+  },
+  "section_coverage": {
+    "unique_sections_detected": 813,
+    "chunks_without_section": 353,
+    "chunks_without_chapter": 1,
+    "chunks_without_page_number": 0,
+    "top_sections_by_chunk_count": {
+      "2": 106,
+      "10": 86,
+      "11": 81,
+      "3": 65,
+      "288": 53,
+      "4": 51,
+      "33B": 47,
+      "5": 39,
+      "13": 39,
+      "9": 37,
+      "47": 31,
+      "132": 28,
+      "28": 26,
+      "143": 26,
+      "139": 25,
+      "36": 25,
+      "33": 25,
+      "12AA": 23,
+      "80": 22,
+      "6": 22
+    }
+  },
+  "sprint_status": "Sprint 1 complete â€” ready for Sprint 2 (embedding + indexing)"
+}

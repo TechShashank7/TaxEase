@@ -1,0 +1,183 @@
+{
+  "schemes": [
+    {
+      "scheme_id": "sec_80c",
+      "scheme_name": "Section 80C",
+      "category": "Investments",
+      "priority_score": 100,
+      "description": "Deductions on investments in PF, PPF, LIC, ELSS, tuition fees, etc.",
+      "eligibility_conditions": {
+        "applicable_regimes": [
+          "old"
+        ]
+      },
+      "deduction_limit": {
+        "type": "group_80c",
+        "max_amount": 150000
+      },
+      "input_fields_required": [
+        "sec_80c_investments"
+      ],
+      "recommendation_text": "Maximize your 80C investments up to \u00e2\u201a\u00b91,50,000.",
+      "explanation_template": "You have invested \u00e2\u201a\u00b9{current_investment}. By investing an additional \u00e2\u201a\u00b9{gap_amount}, you can reach the \u00e2\u201a\u00b9{max_amount} limit under Section 80C.",
+      "references": [
+        "Income Tax Act, 1961 - Section 80C"
+      ]
+    },
+    {
+      "scheme_id": "sec_80d",
+      "scheme_name": "Section 80D",
+      "category": "Health & Insurance",
+      "priority_score": 90,
+      "description": "Deductions for health insurance premiums paid for self, family, and parents.",
+      "eligibility_conditions": {
+        "applicable_regimes": [
+          "old"
+        ]
+      },
+      "deduction_limit": {
+        "type": "health_80d"
+      },
+      "input_fields_required": [
+        "health_insurance_premium",
+        "age",
+        "parents_age",
+        "parents_health_insurance_premium"
+      ],
+      "recommendation_text": "Claim health insurance premiums under 80D.",
+      "explanation_template": "Your current premium is \u00e2\u201a\u00b9{current_investment}. Based on your age profile, your maximum limit is \u00e2\u201a\u00b9{max_amount}. Consider increasing coverage by \u00e2\u201a\u00b9{gap_amount} to maximize tax benefits.",
+      "references": [
+        "Income Tax Act, 1961 - Section 80D"
+      ]
+    },
+    {
+      "scheme_id": "nps_80ccd_1b",
+      "scheme_name": "NPS (80CCD(1B))",
+      "category": "Retirement",
+      "priority_score": 85,
+      "description": "Additional deduction for contributions to the National Pension System.",
+      "eligibility_conditions": {
+        "applicable_regimes": [
+          "old"
+        ]
+      },
+      "deduction_limit": {
+        "type": "fixed",
+        "max_amount": 50000
+      },
+      "input_fields_required": [
+        "nps_contribution"
+      ],
+      "recommendation_text": "Invest an additional \u00e2\u201a\u00b950,000 in NPS.",
+      "explanation_template": "You can claim an exclusive \u00e2\u201a\u00b9{max_amount} deduction over and above the 80C limit. You have currently invested \u00e2\u201a\u00b9{current_investment}.",
+      "references": [
+        "Income Tax Act, 1961 - Section 80CCD(1B)"
+      ]
+    },
+    {
+      "scheme_id": "home_loan_interest_24b",
+      "scheme_name": "Home Loan Interest Deduction",
+      "category": "Housing",
+      "priority_score": 95,
+      "description": "Deduction on interest paid towards a home loan for a self-occupied property.",
+      "eligibility_conditions": {
+        "applicable_regimes": [
+          "old"
+        ]
+      },
+      "deduction_limit": {
+        "type": "fixed",
+        "max_amount": 200000
+      },
+      "input_fields_required": [
+        "home_loan_interest"
+      ],
+      "recommendation_text": "Claim up to \u00e2\u201a\u00b92,00,000 on your home loan interest.",
+      "explanation_template": "You are paying \u00e2\u201a\u00b9{current_investment} in interest. You are eligible to claim this entire amount under Section 24(b), capped at \u00e2\u201a\u00b9{max_amount}.",
+      "references": [
+        "Income Tax Act, 1961 - Section 24(b)"
+      ]
+    },
+    {
+      "scheme_id": "hra_sec_10_13a",
+      "scheme_name": "House Rent Allowance (HRA)",
+      "category": "Housing",
+      "priority_score": 80,
+      "description": "Exemption on HRA received from employer for rent paid.",
+      "eligibility_conditions": {
+        "applicable_regimes": [
+          "old"
+        ]
+      },
+      "deduction_limit": {
+        "type": "hra_calculation"
+      },
+      "input_fields_required": [
+        "basic_salary",
+        "hra_received",
+        "rent_paid",
+        "is_metro_city"
+      ],
+      "recommendation_text": "Optimize your HRA claim based on rent receipts.",
+      "explanation_template": "Based on your rent of \u00e2\u201a\u00b9{rent_paid} and basic salary of \u00e2\u201a\u00b9{basic_salary}, you can claim an exemption of \u00e2\u201a\u00b9{max_amount}.",
+      "references": [
+        "Income Tax Act, 1961 - Section 10(13A)",
+        "Rule 2A of Income Tax Rules"
+      ]
+    },
+    {
+      "scheme_id": "scss",
+      "scheme_name": "Senior Citizen Savings Scheme (SCSS)",
+      "category": "Investments",
+      "priority_score": 75,
+      "description": "High-interest savings scheme for senior citizens (eligible under 80C).",
+      "eligibility_conditions": {
+        "applicable_regimes": [
+          "old"
+        ],
+        "min_age": 60
+      },
+      "deduction_limit": {
+        "type": "group_80c",
+        "max_amount": 150000
+      },
+      "input_fields_required": [
+        "age",
+        "scss_investment"
+      ],
+      "recommendation_text": "Invest in SCSS for guaranteed returns and 80C benefits.",
+      "explanation_template": "Since you are above 60, you qualify for SCSS. You can invest up to \u00e2\u201a\u00b9{max_amount} to claim deductions under Section 80C.",
+      "references": [
+        "Senior Citizens Savings Scheme, 2019",
+        "Income Tax Act, 1961 - Section 80C"
+      ]
+    },
+    {
+      "scheme_id": "ssy",
+      "scheme_name": "Sukanya Samriddhi Yojana (SSY)",
+      "category": "Investments",
+      "priority_score": 70,
+      "description": "Savings scheme for the girl child (eligible under 80C).",
+      "eligibility_conditions": {
+        "applicable_regimes": [
+          "old"
+        ],
+        "requires_girl_child": true
+      },
+      "deduction_limit": {
+        "type": "group_80c",
+        "max_amount": 150000
+      },
+      "input_fields_required": [
+        "has_girl_child",
+        "ssy_investment"
+      ],
+      "recommendation_text": "Invest in SSY to secure your daughter's future while saving tax.",
+      "explanation_template": "As a parent of a girl child, you can invest up to \u00e2\u201a\u00b9{max_amount} annually in SSY, which qualifies for Section 80C deductions and is completely tax-free on maturity.",
+      "references": [
+        "Sukanya Samriddhi Account Rules, 2019",
+        "Income Tax Act, 1961 - Section 80C"
+      ]
+    }
+  ]
+}
